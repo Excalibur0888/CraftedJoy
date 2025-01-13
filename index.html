@@ -6,7 +6,7 @@
     <title>CraftedJoy - Handcrafted Wooden Toys in India</title>
     <meta name="description" content="Discover our collection of handcrafted wooden toys made with love in India. Traditional craftsmanship meets modern design for safe and educational play.">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="icon" href="img/favicon.png" type="image/png">
+    <link rel="icon" href="media/img/favicon.png" type="image/png">
 </head>
 <body>
     <header class="header">
@@ -208,7 +208,7 @@
             <div class="container text-center">
                 <h2 class="mb-4 white-text">Stay Updated</h2>
                 <p class="mb-4">Subscribe to our newsletter for new product launches, special offers, and wooden toy care tips</p>
-                <form class="newsletter-form">
+                <form class="newsletter-form" action="thanks_form.php" method="POST">
                     <div class="form-group">
                         <input type="email" class="form-input" placeholder="Enter your email address" required>
                         <button type="submit" class="btn"><span>Subscribe</span></button>
@@ -259,16 +259,5 @@
     </footer>
 
     <script src="js/main.js"></script>
-    <script>
-        // Форма подписки на рассылку
-        const newsletterForm = document.querySelector('.newsletter-form');
-        newsletterForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            const email = this.querySelector('input[type="email"]').value;
-            // Здесь можно добавить логику отправки email на сервер
-            alert('Thank you for subscribing! We will keep you updated.');
-            this.reset();
-        });
-    </script>
 </body>
 </html> 
