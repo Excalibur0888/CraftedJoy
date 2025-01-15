@@ -364,6 +364,21 @@ h1, h2, h3, h4, h5, h6 {
     border-color: var(--primary-color);
 }
 
+/* Стили для чекбокса в контактной форме */
+.contact-form .checkbox-label {
+    color: var(--text-color);
+    justify-content: flex-start;
+}
+
+.contact-form .checkbox-label a {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.contact-form .checkbox-label a:hover {
+    opacity: 0.8;
+}
+
 /* Footer styles */
 .footer {
     background: var(--dark-bg);
