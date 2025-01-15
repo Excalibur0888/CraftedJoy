@@ -269,8 +269,10 @@ h1, h2, h3, h4, h5, h6 {
     color: white;
     background: var(--gradient);
     border-radius: 50px;
-    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
     position: relative;
+    z-index: 1;
     overflow: hidden;
 }
 
@@ -284,15 +286,17 @@ h1, h2, h3, h4, h5, h6 {
     background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
     opacity: 0;
     transition: opacity 0.3s ease;
+    z-index: -1;
 }
 
 .btn:hover::before {
     opacity: 1;
 }
 
-.btn span {
+.btn span,
+.btn {
     position: relative;
-    z-index: 1;
+    z-index: 2;
 }
 
 /* Form styles */
@@ -1108,14 +1112,14 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-/* Video Section */
-.video-section {
+/* image Section */
+.image-section {
     position: relative;
     height: 600px;
     overflow: hidden;
 }
 
-.video-background {
+.image-background {
     position: absolute;
     top: 0;
     left: 0;
@@ -1124,7 +1128,7 @@ h1, h2, h3, h4, h5, h6 {
     object-fit: cover;
 }
 
-.video-content {
+.image-content {
     position: relative;
     z-index: 1;
     height: 100%;
